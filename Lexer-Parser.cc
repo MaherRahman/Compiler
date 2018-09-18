@@ -1,3 +1,12 @@
+// In order to link the LLVM libraries, we need to link them in using the config tool
+
+/*
+# Compile
+clang++ -g -O3 toy.cpp `llvm-config --cxxflags`
+# Run
+./a.out
+*/
+
 #include "llvm/ADT/STLExtras.h"
 #include <algorithm>
 #include <cctype>
